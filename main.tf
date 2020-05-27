@@ -3,7 +3,6 @@ resource "mysql_database" "my_db" {
 }
 
 resource "random_password" "password" {
-  count            = var.role_password != "" ? 0 : 1
   length           = 16
   special          = true
   override_special = "_%@"
