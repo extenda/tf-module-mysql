@@ -11,7 +11,7 @@ resource "random_password" "password" {
 resource "mysql_user" "db_user" {
   user               = var.user
   host               = var.host
-  plaintext_password = random_password.password
+  plaintext_password = random_password.password.result
 }
 
 resource "mysql_grant" "my_grant" {
