@@ -1,5 +1,5 @@
 provider mysql {
-  endpoint = "${var.endpoint}:${var.port}"
+  endpoint = "${var.host}:${var.port}"
   username = var.username
   password = var.password
 }

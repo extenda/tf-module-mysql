@@ -1,5 +1,5 @@
 # Provider Variables
-variable endpoint {
+variable host {
   type        = string
   description = "The address for the MySQL server connection"
 }
@@ -25,4 +25,9 @@ variable username {
 variable db_name {
   type        = string
   description = "The name of the database to be created"
+}
+
+variable user {
+  type = string
+  description = "The name of the user"
 }
