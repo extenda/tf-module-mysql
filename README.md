@@ -15,7 +15,8 @@ An Extenda Retail maintained Terraform Module, which is intended to create and m
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:-----:|
 | db\_name | The name of the database | `string` | n\a | yes |
-| host | The address for the MySQL server connection | `string` | n/a | yes |
+| endpoint | The address for the MySQL server connection | `string` | `localhost` | no |
+| host | The source host of the user | `string` | `%` | no |
 | password | Password for the server connection | `string` | n/a | yes |
 | port | The port for the MySQL server connection | `string` | `3306` | no |
 | user | The name of the user | `string` | n/a | yes |

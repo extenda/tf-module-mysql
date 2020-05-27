@@ -16,7 +16,7 @@ resource "mysql_user" "db_user" {
 
 resource "mysql_grant" "my_grant" {
   user       = mysql_user.db_user.user
-  host       = mysql_user.db_user.host
+  host       = var.host
   database   = mysql_database.my_db.name
   privileges = ["ALL"]
 }

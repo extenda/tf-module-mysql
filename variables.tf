@@ -1,6 +1,7 @@
 # Provider Variables
-variable host {
+variable endpoint {
   type        = string
+  default     = "localhost"
   description = "The address for the MySQL server connection"
 }
 
@@ -20,6 +21,11 @@ variable username {
   default     = "default"
   description = "Username for the server connection. The default is default"
 }
+variable max_open_conns {
+  type        = string
+  default     = -1
+  description = "How many concurrent connections can be established to this database. -1 (the default) means no limit."
+}
 
 # Database Variables
 variable db_name {
@@ -30,4 +36,10 @@ variable db_name {
 variable user {
   type = string
   description = "The name of the user"
+}
+
+variable host {
+  type        = string
+  default     = "%"
+  description = "The source host of the user"
 }
