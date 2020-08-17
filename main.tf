@@ -1,6 +1,5 @@
 resource "mysql_database" "my_db" {
   name     = var.db_name
-  instance = var.instance
 }
 
 resource "random_password" "password" {

@@ -28,11 +28,6 @@ variable max_open_conns {
 }
 
 # Database Variables
-variable instance {
-  type        = string
-  description = "The name of the Cloud SQL instance. This does not include the project ID"
-}
-
 variable db_name {
   type        = string
   description = "The name of the database to be created"
