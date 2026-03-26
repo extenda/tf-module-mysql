@@ -43,3 +43,15 @@ variable host {
   default     = "%"
   description = "The source host of the user"
 }
+
+variable default_character_set {
+  type        = string
+  default     = "utf8"
+  description = "The default character set for the database"
+}
+
+variable default_collation {
+  type        = string
+  default     = "utf8_general_ci"
+  description = "The default collation for the database"
+}

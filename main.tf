@@ -1,5 +1,7 @@
 resource "mysql_database" "my_db" {
-  name     = var.db_name
+  name                  = var.db_name
+  default_character_set = var.default_character_set
+  default_collation     = var.default_collation
 }
 
 resource "random_password" "password" {
